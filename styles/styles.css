@@ -1,8 +1,18 @@
+@font-face{
+    font-family: Avenir;
+    src: url("https://santrapgamer.github.io/Avenir.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* General page styling. */
-html, body {
+* {
 margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Avenir, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -42,6 +52,28 @@ header {
 .site-motto {
     font-weight: bold;
     font-size: 1.25vw;
+}
+
+.search-social-pow-tod {
+    display: inline-block;
+}
+
+.searchbar {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    padding-left: .5vw;
+    padding-bottom: .25vw;
+    vertical-align: top;
+}
+
+.searchbar:hover {
+    border: 1px solid #76AEDD;
+    border-radius: 5px;
+    padding-left: .5vw;
+    padding-bottom: .25vw;
 }
 
 
