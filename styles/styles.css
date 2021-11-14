@@ -1,0 +1,157 @@
+/* General page styling. */
+html, body {
+margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Header specific styling. */
+header {
+    margin-top: 3vh;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    padding: 0;
+    text-align: center;
+}
+
+.header-logo {
+    display: inline-block;
+    margin-right: 1vh;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.header-title-motto {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-logo {
+    width: auto;
+    height: 15vw;
+}
+
+.site-title {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+}
+
+.site-motto {
+    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+
+/* Navigation Bar Style */
+nav {
+    width: 100vw;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+    float: left;
+    padding-left: 1vw;
+    padding-top: .75vh;
+    padding-bottom: .5vh;
+    padding-right: 4vw;
+}
+
+@media screen and (max-width: 500px) {
+  .main-nav a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main-nav a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid black;
+    transition: background-color .25s linear, color .25s linear;
+}
+
+.main-nav .current {
+    background-color: black;
+    color: #ff2c7b;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.current::before {
+    content: "";
+    border: 12px solid black;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+}
+
+
+/* Styling for practice JavaScript Search */
+* {
+  box-sizing: border-box;
+}
+
+section {
+    text-align: center;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 60%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin-left: 20vw;
+}
+
+#myUL li {
+  display: none;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  width: 60%;
+  font-size: 18px;
+  color: black;
+  display: block;
+  text-align: left;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
