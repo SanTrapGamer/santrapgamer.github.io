@@ -1,6 +1,6 @@
 @font-face{
     font-family: Avenir;
-    src: url("https://santrapgamer.github.io/Avenir.ttf") format("truetype");
+    src: url("Avenir.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -56,24 +56,71 @@ header {
 
 .search-social-pow-tod {
     display: inline-block;
+    text-align: right;
 }
 
 .searchbar {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.searchbar input{
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid black;
     border-radius: 5px;
-    padding-left: .5vw;
-    padding-bottom: .25vw;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     vertical-align: top;
+    font-size: 10px;
 }
 
-.searchbar:hover {
+.searchbar input:hover {
     border: 1px solid #76AEDD;
     border-radius: 5px;
-    padding-left: .5vw;
-    padding-bottom: .25vw;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.twitter-link{
+    color: black;
+}
+
+.twitter-link:hover {
+    cursor: pointer;
+}
+
+.pow {
+    display: inline-block;
+    width: 9vw;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.tod {
+    display: inline-block;
+    width: 9vw;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 
