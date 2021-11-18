@@ -19,7 +19,7 @@
 /* Header specific styling. */
 header {
     width: 100vw;
-    margin-top: 3vh;
+    margin-top: 10vh;
     margin-bottom: 1rem;
     padding: 0;
     text-align: center;
@@ -40,6 +40,7 @@ header {
 .header-title-motto {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 2vw;
 }
 
 .site-logo {
@@ -65,19 +66,6 @@ header {
     vertical-align: top;
 }
 
-.search-button {
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-.search-button img {
-  width: 15px;
-  height: 15px;
-  margin-top: 3px;
-  color: #76AEDD;
-}
-
 .searchbar {
     margin-left: 10px;
     margin-bottom: 10px;
@@ -93,7 +81,7 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
     vertical-align: top;
-    font-size: 10px;
+    font-size: 1vw;
 }
 
 .searchbar input:hover {
@@ -102,6 +90,19 @@ header {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-button img {
+  width: 15px;
+  height: 15px;
+  margin-top: 1vh;
+  color: #76AEDD;
 }
 
 .twitter-link{
@@ -115,33 +116,70 @@ header {
 
 .pow {
     display: inline-block;
-    width: 9vw;
+    width: 12vw;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
-    padding-top: 1vh;
-    padding-left: .5vw;
-    padding-right: .5vw;
-    padding-bottom: 1vh;
-    font-size: 12px;
-    font-weight: bold;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-size: .95rem;
     margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-right: -2vw;
+    box-shadow: 3px 3px #65b5a6;
+    transition: box-shadow .125s linear, color .125s linear;
+}
+
+.pow:hover {
+    display: inline-block;
+    width: 12vw;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-size: .95rem;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-right: -2vw;
+    box-shadow: -3px -3px #65b5a6;
+    transition: box-shadow .125s linear, color .125s linear;
 }
 
 .tod {
     display: inline-block;
-    width: 9vw;
+    width: 12vw;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
-    padding-top: 1vh;
-    padding-left: .5vw;
-    padding-right: .5vw;
-    padding-bottom: 1vh;
-    font-size: 12px;
-    font-weight: bold;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-size: .95rem;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-right: -2vw;
+    box-shadow: 3px 3px #65b5a6;
+    transition: box-shadow .125s linear, color .125s linear;
+}
+
+.tod:hover {
+    display: inline-block;
+    width: 12vw;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-size: .95rem;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-right: -2vw;
+    box-shadow: -3px -3px #65b5a6;
+    transition: box-shadow .125s linear, color .125s linear;
 }
 
 
@@ -154,7 +192,7 @@ nav {
 .main-nav ul {
     list-style-type: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.19rem;
     font-weight: bold;
     margin: 0;
 }
@@ -172,6 +210,7 @@ nav {
     padding-top: .75vh;
     padding-bottom: .5vh;
     padding-right: 4vw;
+    transition: background-color .25s linear, color .25s linear;
 }
 
 @media screen and (max-width: 500px) {
@@ -180,6 +219,7 @@ nav {
     display: block;
     width: 100%;
     text-align: center;
+    transition: background-color .25s linear, color .25s linear;
   }
 }
 
@@ -216,7 +256,7 @@ nav {
 }
 
 video {
-    max-width: 60%;
+    max-width: 70%;
     height: auto;
     padding-left: 1.25vw;
 }
