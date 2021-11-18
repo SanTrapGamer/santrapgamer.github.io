@@ -13,16 +13,21 @@ margin: 0;
     font-family: Avenir, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 
 /* Header specific styling. */
 header {
+    width: 100vw;
     margin-top: 3vh;
     margin-right: 20vw;
     margin-left: 20vw;
     padding: 0;
-    text-align: center;
+}
+
+.logo-title {
+    display: inline-block;
 }
 
 .header-logo {
@@ -54,9 +59,23 @@ header {
     font-size: 1.25vw;
 }
 
-.search-social-pow-tod {
+.search-form {
     display: inline-block;
     text-align: right;
+    vertical-align: top;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-button img {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  color: #76AEDD;
 }
 
 .searchbar {
@@ -87,6 +106,7 @@ header {
 
 .twitter-link{
     color: black;
+    margin-left: 1vw;
 }
 
 .twitter-link:hover {
@@ -100,12 +120,13 @@ header {
     border: none;
     background-color: black;
     color: white;
-    padding-top: 3px;
-    padding-left: 2px;
-    padding-right: 5px;
-    padding-bottom: 3px;
-    font-size: 10px;
+    padding-top: 1vh;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-bottom: 1vh;
+    font-size: 12px;
     font-weight: bold;
+    margin-bottom: 1vh;
 }
 
 .tod {
@@ -115,11 +136,11 @@ header {
     border: none;
     background-color: black;
     color: white;
-    padding-top: 3px;
-    padding-left: 2px;
-    padding-right: 5px;
-    padding-bottom: 3px;
-    font-size: 10px;
+    padding-top: 1vh;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-bottom: 1vh;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -189,13 +210,10 @@ nav {
 
 
 /* Styling for practice JavaScript Search */
-* {
-  box-sizing: border-box;
-}
-
 section {
     text-align: center;
 }
+
 #myInput {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
@@ -220,7 +238,7 @@ section {
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
+  margin-top: -1px;
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
