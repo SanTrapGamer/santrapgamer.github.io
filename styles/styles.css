@@ -77,8 +77,9 @@ header {
     border-left: none;
     border-bottom: 1px solid black;
     border-radius: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
+    padding-left: 7px;
+    padding-top: 6px;
+    padding-right: 7px;
     padding-bottom: 5px;
     vertical-align: top;
     font-size: 1vw;
@@ -90,6 +91,7 @@ header {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 1vw;
 }
 
 .search-button {
@@ -99,31 +101,35 @@ header {
 }
 
 .search-button img {
-  width: 15px;
-  height: 15px;
+  width: 1vw;
   margin-top: 1vh;
   color: #76AEDD;
 }
 
 .twitter-link{
-    color: black;
+    color: #1DA1F2;
     margin-left: 1vw;
+    padding-right: .5vw;
 }
 
 .twitter-link:hover {
     cursor: pointer;
 }
 
+.fa-envelope {
+}
+
 .pow {
     display: inline-block;
     width: 12vw;
+    height: 2.5vw;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    font-size: .95rem;
+    font-size: 1vw;
     margin-bottom: 1vh;
     margin-top: 1vh;
     margin-right: -2vw;
@@ -134,13 +140,14 @@ header {
 .pow:hover {
     display: inline-block;
     width: 12vw;
+    height: 2.5vw;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    font-size: .95rem;
+    font-size: 1vw;
     margin-bottom: 1vh;
     margin-top: 1vh;
     margin-right: -2vw;
@@ -151,13 +158,14 @@ header {
 .tod {
     display: inline-block;
     width: 12vw;
+    height: 2.5vw;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    font-size: .95rem;
+    font-size: 1vw;
     margin-bottom: 1vh;
     margin-top: 1vh;
     margin-right: -2vw;
@@ -168,13 +176,14 @@ header {
 .tod:hover {
     display: inline-block;
     width: 12vw;
+    height: 2.5vw;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    font-size: .95rem;
+    font-size: 1vw;
     margin-bottom: 1vh;
     margin-top: 1vh;
     margin-right: -2vw;
@@ -192,9 +201,9 @@ nav {
 .main-nav ul {
     list-style-type: none;
     display: inline-block;
-    font-size: 1.19rem;
+    font-size: 1.19vw;
     font-weight: bold;
-    margin: 0;
+    margin: 0 auto;
 }
 .main-nav li {
     display: inline;
@@ -256,9 +265,9 @@ nav {
 }
 
 video {
-    max-width: 70%;
+    max-width: 67.25vw;
     height: auto;
-    padding-left: 1.25vw;
+    padding-left: 1vw;
 }
 
 .welcome-message {
